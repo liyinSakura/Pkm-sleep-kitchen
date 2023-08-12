@@ -1,8 +1,14 @@
-# React + Vite
+# Pokémon-sleep-kitchen
+## 做宝可梦app的厨房小工具（施工中）
+### 数据来源
+- [https://www.serebii.net/pokemonsleep/dishes.shtml](https://www.serebii.net/pokemonsleep/dishes.shtml)
+- [https://www.serebii.net/pokemonsleep/ingredients.shtml](https://www.serebii.net/pokemonsleep/ingredients.shtml)
+### 翻译参考文档（虽然目前还没加上
+  [https://docs.qq.com/sheet/DVU9WU0JveHZIeWhN?tab=BB08J2](https://docs.qq.com/sheet/DVU9WU0JveHZIeWhN?tab=BB08J2)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+后续考虑加上港服 iOS app 翻译
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 更新计划
+- 多个目标食谱所需食材类目展示
+- 支持锅子大小
+- 筛选推荐的食谱
