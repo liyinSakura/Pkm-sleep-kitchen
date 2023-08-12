@@ -1,58 +1,59 @@
-import mixedcurry from '@/assets/menu/mixedcurry.png'
-import fancyapplecurry from '@/assets/menu/fancyapplecurry.png'
-import grilledtailcurry from '@/assets/menu/grilledtailcurry.png'
-import solarpowertomatocurry from '@/assets/menu/solarpowertomatocurry.png'
-import dreameaterbuttercurry from '@/assets/menu/dreameaterbuttercurry.png'
-import spicyleekcurry from '@/assets/menu/Spicy Leek Curry Icon.png'
-import eggbombcurry from '@/assets/menu/eggbombcurry.png'
-import heartycheeseburgercurry from '@/assets/menu/heartycheeseburgercurry.png'
-import softpotatochowder from '@/assets/menu/softpotatochowder.png'
-import simplechowder from '@/assets/menu/simplechowder.png'
-import beanburgercurry from '@/assets/menu/beanburgercurry.png'
-import mildhoneycurry from '@/assets/menu/mildhoneycurry.png'
-import ninjacurry from '@/assets/menu/ninjacurry.png'
-import droughtkatsucurry from '@/assets/menu/droughtkatsucurry.png'
-import meltyomelettecurry from '@/assets/menu/Melty Omelette Curry Icon.png'
-import bulkupbeancurry from '@/assets/menu/bulkupbeancurry.png'
-import sporemushroomcurry from '@/assets/menu/sporemushroomcurry.png'
-
-import mixedjuice from '@/assets/menu/Mixed Juice Icon.png'
-import fluffysweetpotatoes from '@/assets/menu/Fluffy Sweet Potatoes Icon.png'
-import steadfastgingercookies from '@/assets/menu/steadfastgingercookies.png'
-import fancyapplejuice from '@/assets/menu/fancyapplejuice.png'
-import craftsodapop from '@/assets/menu/craftsodapop.png'
-import embergingertea from '@/assets/menu/Ember Ginger Tea Icon.png'
-import sfruityflan from '@/assets/menu/Jigglypuff_s Fruity Flan Icon.png'
-import lovelykisssmoothie from '@/assets/menu/Lovely Kiss Smoothie Icon.png'
-import luckychantapplepie from '@/assets/menu/Lucky Chant Apple Pie Icon.png'
-import srestorativetea from '@/assets/menu/Neroli_s Restorative Tea Icon.png'
-import sweetscentchocolatecake from '@/assets/menu/Sweet Scent Chocolate Cake Icon.png'
-import warmmoomoomilk from '@/assets/menu/Warm Moomoo Milk Icon.png'
-import cloudninesoycake from '@/assets/menu/cloudninesoycake.png'
-import hustleproteinsmoothie from '@/assets/menu/Hustle Protein Smoothie Icon.png'
-import stalwartvegetablejuice from '@/assets/menu/Stalwart Vegetable Juice Icon.png'
-import bigmalasada from '@/assets/menu/Big Malasada Icon.png'
-import hugepowersoydonuts from '@/assets/menu/Huge Power Soy Donuts Icon.png'
+const menuPath = 'https://raw.githubusercontent.com/liyinSakura/Pkm-sleep-kitchen/master/src/assets/menu/'
+const mixedcurry = `${menuPath}mixedcurry.png`
+const fancyapplecurry = `${menuPath}fancyapplecurry.png`
+const grilledtailcurry = `${menuPath}grilledtailcurry.png`
+const solarpowertomatocurry = `${menuPath}solarpowertomatocurry.png`
+const dreameaterbuttercurry = `${menuPath}dreameaterbuttercurry.png`
+const spicyleekcurry = `${menuPath}Spicy Leek Curry Icon.png`
+const eggbombcurry = `${menuPath}eggbombcurry.png`
+const heartycheeseburgercurry = `${menuPath}heartycheeseburgercurry.png`
+const softpotatochowder = `${menuPath}softpotatochowder.png`
+const simplechowder = `${menuPath}simplechowder.png`
+const beanburgercurry = `${menuPath}beanburgercurry.png`
+const mildhoneycurry = `${menuPath}mildhoneycurry.png`
+const ninjacurry = `${menuPath}ninjacurry.png`
+const droughtkatsucurry = `${menuPath}droughtkatsucurry.png`
+const meltyomelettecurry = `${menuPath}Melty Omelette Curry Icon.png`
+const bulkupbeancurry = `${menuPath}bulkupbeancurry.png`
+const sporemushroomcurry = `${menuPath}sporemushroomcurry.png`
 
 
-import largeleek from '@/assets/ingredients/largeleek.png'
-import tastymushroom from '@/assets/ingredients/Tasty Mushroom Icon.png'
-import fancyegg from '@/assets/ingredients/fancyegg.png'
-import softpotato from '@/assets/ingredients/softpotato.png'
-import fancyapple from '@/assets/ingredients/fancyapple.png'
-import fieryherb from '@/assets/ingredients/fieryherb.png'
-import beansausage from '@/assets/ingredients/beansausage.png'
-import moomoomilk from '@/assets/ingredients/moomoomilk.png'
-import honey from '@/assets/ingredients/honey.png'
-import pureoil from '@/assets/ingredients/Pure Oil Icon.png'
-import warmingginger from '@/assets/ingredients/warmingginger.png'
-import snoozytomato from '@/assets/ingredients/snoozytomato.png'
-import soothingcacao from '@/assets/ingredients/Soothing Cacao Icon.png'
-import slowpoketail from '@/assets/ingredients/Slowpoke Tail Icon.png'
-import greengrasssoybeans from '@/assets/ingredients/Greengrass Soybeans Icon.png'
+const mixedjuice = `${menuPath}Mixed Juice Icon.png`
+const fluffysweetpotatoes = `${menuPath}Fluffy Sweet Potatoes Icon.png`
+const steadfastgingercookies = `${menuPath}steadfastgingercookies.png`
+const fancyapplejuice = `${menuPath}fancyapplejuice.png`
+const craftsodapop = `${menuPath}craftsodapop.png`
+const embergingertea = `${menuPath}Ember Ginger Tea Icon.png`
+const sfruityflan = `${menuPath}Jigglypuff_s Fruity Flan Icon.png`
+const lovelykisssmoothie = `${menuPath}Lovely Kiss Smoothie Icon.png`
+const luckychantapplepie = `${menuPath}Lucky Chant Apple Pie Icon.png`
+const srestorativetea = `${menuPath}Neroli_s Restorative Tea Icon.png`
+const sweetscentchocolatecake = `${menuPath}Sweet Scent Chocolate Cake Icon.png`
+const warmmoomoomilk = `${menuPath}Warm Moomoo Milk Icon.png`
+const cloudninesoycake = `${menuPath}cloudninesoycake.png`
+const hustleproteinsmoothie = `${menuPath}Hustle Protein Smoothie Icon.png`
+const stalwartvegetablejuice = `${menuPath}Stalwart Vegetable Juice Icon.png`
+const bigmalasada = `${menuPath}Big Malasada Icon.png`
+const hugepowersoydonuts = `${menuPath}Huge Power Soy Donuts Icon.png`
 
+const ingredientsPath = 'https://raw.githubusercontent.com/liyinSakura/Pkm-sleep-kitchen/master/src/assets/ingredients/'
+const largeleek = `${ingredientsPath}largeleek.png`
+const tastymushroom = `${ingredientsPath}Tasty Mushroom Icon.png`
+const fancyegg = `${ingredientsPath}fancyegg.png`
+const softpotato = `${ingredientsPath}softpotato.png`
+const fancyapple = `${ingredientsPath}fancyapple.png`
+const fieryherb = `${ingredientsPath}fieryherb.png`
+const beansausage = `${ingredientsPath}beansausage.png`
+const moomoomilk = `${ingredientsPath}moomoomilk.png`
+const honey = `${ingredientsPath}honey.png`
+const pureoil = `${ingredientsPath}Pure Oil Icon.png`
+const warmingginger = `${ingredientsPath}warmingginger.png`
+const snoozytomato = `${ingredientsPath}snoozytomato.png`
+const soothingcacao = `${ingredientsPath}Soothing Cacao Icon.png`
+const slowpoketail = `${ingredientsPath}Slowpoke Tail Icon.png`
+const greengrasssoybeans = `${ingredientsPath}Greengrass Soybeans Icon.png`
 
-export const menuList = [
+let menuList = [
     {
         title: 'List of Curry',
         list: [
@@ -232,7 +233,7 @@ export const menuList = [
                     }
                 ],
                 "Name": "Soft Potato Chowder",
-                "Description": "A thick chowder made from potatoes boiled until practically melting.",
+                "Description": "A thick chowder made = potatoes boiled until practically melting.",
                 "Ingredients": "Moomoo Milk * 10Soft Potato * 8Tasty Mushroom * 4"
             },
             {
@@ -381,7 +382,7 @@ export const menuList = [
             {
                 "Picture": "",
                 "Name": "Gluttony Potato Salad",
-                "Description": "This potato salad contains just a hint of flavor from the Fancy Apples.",
+                "Description": "This potato salad contains just a hint of flavor = the Fancy Apples.",
                 "Ingredients": "Soft Potato * 14Fancy Egg * 9Bean Sausage * 7Fancy Apple * 6"
             },
             {
@@ -399,7 +400,7 @@ export const menuList = [
             {
                 "Picture": "",
                 "Name": "Bean Ham Salad",
-                "Description": "This simple salad features ham made from Bean Sausages.",
+                "Description": "This simple salad features ham made = Bean Sausages.",
                 "Ingredients": "Bean Sausage * 8"
             },
             {
@@ -746,7 +747,7 @@ export const menuList = [
                     },
                 ],
                 "Name": "Big Malasada",
-                "Description": "A special fried bread made using a recipe from the Alola region.",
+                "Description": "A special fried bread made using a recipe = the Alola region.",
                 "Ingredients": "Pure Oil * 10Moomoo Milk * 7Honey * 6"
             },
             {
@@ -773,7 +774,18 @@ export const menuList = [
         ]
     }
 ]
-export const ingredientsList = [
+
+menuList = menuList.map(i=>{
+    i.key = i.title.replace(/\s*/g,"").toLowerCase()
+    i.list = i.list.map(j=>{
+        j.name = j.Name
+        j.key = j.name.replace(/\s*/g,"").toLowerCase()
+        return j
+    })
+    return i
+})
+
+let ingredientsList =  [
 
     {
         "Picture": "",
@@ -797,7 +809,7 @@ export const ingredientsList = [
         "Picture": "",
         url: beansausage,
         "Name": "Bean Sausage",
-        "Description": "A healthy sausage made from beans that Pokémon like to eat.",
+        "Description": "A healthy sausage made = beans that Pokémon like to eat.",
         "Base Strength": "103",
         "Sell Value": "4 Dream Shards"
     },
@@ -899,6 +911,11 @@ export const ingredientsList = [
         "Sell Value": "14 Dream Shards"
     },
 ]
+ingredientsList = ingredientsList.map(i=>{
+    i.name = i.Name
+    i.key = i.Name.replace(/\s*/g,"").toLowerCase()
+    return i
+})
 
 const ingredientsListMap = new Map()
 ingredientsList.forEach(i=>{
@@ -906,5 +923,7 @@ ingredientsList.forEach(i=>{
 })
 
 export {
-    ingredientsListMap
+    ingredientsListMap,
+    menuList,
+    ingredientsList
 }

@@ -20,13 +20,12 @@ const IndexPage = props => {
         }
 
     }
-    const  formatMenuList = menuList.map((i,index)=>{
-        i.key = index
+    const  formatMenuList = menuList.map((i)=>{
         i.label = i.title
-        i.children = (<div key={index}>
+        i.children = (<div key={i.key}>
             {
-                i.list.map((j,index)=>{
-                    return <MenuCard key={index} source={j} onTargetMenuChange={updateTargetMenu}/>
+                i.list.map((j)=>{
+                    return <MenuCard key={j.key} source={j} onTargetMenuChange={updateTargetMenu}/>
                 })
             }
         </div>)

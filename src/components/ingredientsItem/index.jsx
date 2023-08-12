@@ -1,8 +1,6 @@
 import React, {PureComponent, useCallback} from 'react';
-import { MinusOutlined, PlusOutlined, QuestionOutlined } from '@ant-design/icons';
 import { Card ,Avatar, Badge, InputNumber ,Button} from 'antd';
 import styles from './styles.css'
-const ButtonGroup = Button.Group;
 
 
 import {ingredientsListMap} from "../../constant/baseData";

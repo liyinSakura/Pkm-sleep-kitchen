@@ -10,9 +10,9 @@ const TargetMenuView = props => {
     const formatTableData = () => {
         let result1 = [], result2 = []
         result1.push({
-            title: '食谱名',
-            dataIndex: 'Name',
-            key: 'Name',
+            title: 'name',
+            dataIndex: 'name',
+            key: 'name',
             render: (text) => <a>{text}</a>,
         })
         const columnsMap = new Map()
@@ -24,7 +24,7 @@ const TargetMenuView = props => {
                 }
                 if(Array.isArray(ingredientsList)){
                     ingredientsList.forEach(j=>{
-                        let nameKey = j.name.replace(/\s*/g,"").toLowerCase()
+                        let nameKey = j.key
                         newItem[nameKey] = j.num
                         if(!columnsMap.has(nameKey)){
                             columnsMap.set(nameKey,{
