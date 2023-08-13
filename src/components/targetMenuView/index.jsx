@@ -47,7 +47,9 @@ const TargetMenuView = props => {
             })
         }
     }
-
+    if(!tableData.length){
+        return null
+    }
     return <Table columns={columns} dataSource={tableData} />
 }
 export default TargetMenuView
