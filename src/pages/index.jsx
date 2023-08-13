@@ -1,6 +1,7 @@
 import React, {PureComponent, useCallback, useEffect, useState} from 'react';
 import { menuList } from "../constant/baseData";
-import { Tabs, Menu  } from 'antd';
+import { Tabs, Menu, FloatButton   } from 'antd';
+import { GithubOutlined } from '@ant-design/icons';
 import MenuCard from "../components/menuCard";
 import BagView from "../components/bagView";
 import TargetMenuView from "../components/targetMenuView";
@@ -65,7 +66,16 @@ const IndexPage = props => {
 
                 <TargetMenuView source={targetMenuList}/>
             </div>
-
+            <FloatButton
+                shape="square"
+                type="default"
+                style={{
+                    right: 24,
+                }}
+                href={'https://github.com/liyinSakura/Pkm-sleep-kitchen'}
+                target="_blank"
+                icon={<GithubOutlined />}
+            />
         </div>
     )
 }
