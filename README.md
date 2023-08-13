@@ -1,5 +1,5 @@
 # Pokémon-sleep-kitchen
-## 做宝可梦app的厨房小工具（施工中）
+## 做宝可梦app的厨房小工具（烂尾）
 [卡比今天吃什么](https://app.tecnico.cc/pokemon-sleep-kitchen/)
 ### 数据来源
 - [https://www.serebii.net/pokemonsleep/dishes.shtml](https://www.serebii.net/pokemonsleep/dishes.shtml)
