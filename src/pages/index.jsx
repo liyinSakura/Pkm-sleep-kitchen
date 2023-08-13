@@ -21,7 +21,7 @@ const IndexPage = props => {
 
     }
     const  formatMenuList = menuList.map((i)=>{
-        i.label = i.title
+        i.label = i.titleZh
         i.children = (<div key={i.key}>
             {
                 i.list.map((j)=>{

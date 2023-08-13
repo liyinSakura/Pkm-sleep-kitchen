@@ -40,3 +40,5 @@ dist-ssr
 .umi-production
 
 .idea/
+
+dist.zip

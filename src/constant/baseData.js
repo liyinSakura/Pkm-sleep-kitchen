@@ -57,6 +57,7 @@ const greengrasssoybeans = `${ingredientsPath}Greengrass Soybeans Icon.png`
 let menuList = [
     {
         title: 'List of Curry',
+        titleZh: '咖喱',
         list: [
             {
                 "Picture": "",
@@ -393,6 +394,7 @@ let menuList = [
     },
     {
         title: 'List of Salads',
+        titleZh: '沙拉',
         list: [
             {
                 "Picture": "",
@@ -743,6 +745,7 @@ let menuList = [
     },
     {
         title: 'List of Desserts',
+        titleZh: '甜点饮料',
         list: [
             {
                 "Picture": "",

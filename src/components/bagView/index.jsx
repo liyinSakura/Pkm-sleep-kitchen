@@ -45,20 +45,6 @@ const BagView = props => {
         store.set('bagData', {bagList: storeData,totalNum})
     },[list])
 
-    const items = [
-        {
-            key: '1',
-            label: `我的背包(${curTotalNum}/${maxBagNum})`,
-            children:  <div className={styles.bagList}>
-                {
-                    list.map((item,index)=>{
-                        return <IngredientsItem showControl key={index} ingredient={item} handleNumChange={handleNumChange}/>
-                    })
-                }
-            </div>,
-        },
-    ]
-
     return (
         <div className="bagWrap">
             <Card title={`我的背包(${curTotalNum}/${maxBagNum})`}>
@@ -70,7 +56,6 @@ const BagView = props => {
                     }
                 </div>
             </Card>
-            {/*<Collapse items={items} defaultActiveKey={['1']} onChange={()=>{}} />*/}
         </div>
     )
 }
