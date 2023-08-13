@@ -1,5 +1,6 @@
 # Pokémon-sleep-kitchen
 ## 做宝可梦app的厨房小工具（施工中）
+[卡比今天吃什么](https://app.tecnico.cc/pokemon-sleep-kitchen/)
 ### 数据来源
 - [https://www.serebii.net/pokemonsleep/dishes.shtml](https://www.serebii.net/pokemonsleep/dishes.shtml)
 - [https://www.serebii.net/pokemonsleep/ingredients.shtml](https://www.serebii.net/pokemonsleep/ingredients.shtml)
@@ -12,3 +13,4 @@
 - 多个目标食谱所需食材类目展示
 - 支持锅子大小输入
 - 筛选食谱功能
+

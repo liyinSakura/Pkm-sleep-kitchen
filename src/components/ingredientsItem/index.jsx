@@ -11,7 +11,7 @@ const IngredientsItem = props => {
     },[ingredient])
     if(ingredientsListMap.has(ingredient.name)){
         return (
-            <div className="flex justify-between flex-direction">
+            <div className="flex justify-between flex-direction flex-wrap">
                 <div className="ingredient-item">
                     <Popover content={ingredientsListMap.get(ingredient.name).nameZh} title="" trigger="hover" placement="bottom">
                         <Badge count={ingredient.num} showZero>

@@ -47,15 +47,14 @@ const BagView = props => {
 
     return (
         <div className="bagWrap">
-            <Card title={`我的背包(${curTotalNum}/${maxBagNum})`}>
-                <div className={styles.bagList}>
-                    {
-                        list.map((item,index)=>{
-                            return <IngredientsItem showControl key={index} ingredient={item} handleNumChange={handleNumChange}/>
-                        })
-                    }
-                </div>
-            </Card>
+            <div>{`我的背包(${curTotalNum}/${maxBagNum})`}</div>
+            <div className={styles.bagList}>
+                {
+                    list.map((item,index)=>{
+                        return <IngredientsItem showControl key={index} ingredient={item} handleNumChange={handleNumChange}/>
+                    })
+                }
+            </div>
         </div>
     )
 }

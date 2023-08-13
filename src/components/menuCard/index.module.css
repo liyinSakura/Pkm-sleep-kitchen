@@ -6,12 +6,21 @@
     height: 80px;
 }
 .ingredientsListWrap {
-    padding-top: 30px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .mb20 {
     margin-bottom: 20px;
 }
+.mb10 {
+    margin-bottom: 10px;
+}
 .cardInfo {
     margin-left: 10px;
     flex: 1;
+}
+.imgWrap {
+    flex: 0 0 80px;
+    width: 80px;
 }
