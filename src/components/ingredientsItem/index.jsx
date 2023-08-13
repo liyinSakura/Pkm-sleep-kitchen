@@ -1,5 +1,5 @@
 import React, {PureComponent, useCallback} from 'react';
-import { Card ,Avatar, Badge, InputNumber ,Button} from 'antd';
+import { Popover ,Avatar, Badge, InputNumber ,Button} from 'antd';
 import styles from './styles.css'
 
 
@@ -13,9 +13,11 @@ const IngredientsItem = props => {
         return (
             <div className="flex justify-between flex-direction">
                 <div className="ingredient-item">
-                    <Badge count={ingredient.num} showZero>
-                        <Avatar shape="square" size="large" src={ingredientsListMap.get(ingredient.name).url} />
-                    </Badge>
+                    <Popover content={ingredientsListMap.get(ingredient.name).nameZh} title="" trigger="hover" placement="bottom">
+                        <Badge count={ingredient.num} showZero>
+                            <Avatar shape="square" size="large" src={<img src={ingredientsListMap.get(ingredient.name).url} alt={ingredientsListMap.get(ingredient.name).nameZh} />} />
+                        </Badge>
+                    </Popover>
                     {
                         showControl ? <InputNumber min={0} defaultValue={ingredient.num} onChange={onChange} className="ml30"/>: null
                     }
