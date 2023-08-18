@@ -1095,10 +1095,19 @@ let menuList = [
 ]
 
 menuList = menuList.map(i=>{
+
     i.key = i.title.replace(/\s*/g,"").toLowerCase()
     i.list = i.list.map(j=>{
         j.name = j.Name
         j.key = j.name.replace(/\s*/g,"").toLowerCase()
+        const {ingredientsList} = j
+        let totalItem = 0
+        if(Array.isArray(ingredientsList)){
+            ingredientsList.forEach(k=>{
+                totalItem += k.num
+            })
+        }
+        j.totalItemNum = totalItem
         return j
     })
     return i

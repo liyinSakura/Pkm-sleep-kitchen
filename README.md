@@ -9,11 +9,13 @@
 
 - 港服 iOS app 的翻译 （取决于解锁进度）
 
-[发现现成的工具了,不更新了](https://pokemonsleep.raenonx.cc/zh/pokedex)
+[发现现成的工具了](https://pokemonsleep.raenonx.cc/zh/pokedex)
 
-~~更新计划, 没有了发现已经有现成的了~~
+### 更新计划
 
-~~多个目标食谱所需食材类目展示~~
+多个目标食谱所需食材类目展示(已达成)
+
+做成料理的食材偏差值（未达成）
 
 ~~支持锅子大小输入~~
 

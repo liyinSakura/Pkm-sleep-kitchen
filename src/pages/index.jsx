@@ -8,28 +8,17 @@ import TargetMenuView from "../components/targetMenuView";
 import styles from './styles.css'
 
 const IndexPage = props => {
-    const [targetMenuList,setTargetMenuList] = useState([])
     const [current, setCurrent] = useState('menu');
     const onClick = (e) => {
         setCurrent(e.key);
     };
-    const updateTargetMenu = ({checked,menu}) => {
-        console.log('--------------------',checked,targetMenuList,{checked,menu})
-        let result = [...targetMenuList]
-        if(checked){
-            result = [menu,...result,]
-            setTargetMenuList(result)
-        } else {
 
-        }
-
-    }
     const  formatMenuList = menuList.map((i)=>{
         i.label = i.titleZh
         i.children = (<div key={i.key}>
             {
                 i.list.map((j)=>{
-                    return <MenuCard key={j.key} source={j} onTargetMenuChange={updateTargetMenu}/>
+                    return <MenuCard key={j.key} source={j}/>
                 })
             }
         </div>)
@@ -48,6 +37,10 @@ const IndexPage = props => {
             label: '背包管理',
             key: 'bag',
         },
+        {
+            label: '目标料理',
+            key: 'kitchen',
+        },
     ]
 
     return (
@@ -63,8 +56,9 @@ const IndexPage = props => {
                 {
                     current === 'bag' ? <BagView /> : null
                 }
-
-                <TargetMenuView source={targetMenuList}/>
+                {
+                    current === 'kitchen' ? <TargetMenuView/> : null
+                }
             </div>
             <FloatButton
                 shape="square"

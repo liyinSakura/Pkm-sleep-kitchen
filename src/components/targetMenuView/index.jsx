@@ -1,18 +1,24 @@
 import React, {useEffect, useState} from 'react';
 import { Space, Table, Tag } from 'antd';
+import store from "../../utils/store";
+import {ingredientsListMap} from "../../constant/baseData";
 const TargetMenuView = props => {
-    const { source } = props
+    const source = store.get('targetMenu') || []
+    const bagData = store.get('bagData') || {}
     const [columns,setColumns] = useState([])
     const [tableData,setTableData] = useState([])
     useEffect(()=>{
         formatTableData()
-    },[source])
+    },[])
+    const remove = (item) => {
+        console.log('=======',item)
+    }
     const formatTableData = () => {
         let result1 = [], result2 = []
         result1.push({
             title: 'name',
-            dataIndex: 'name',
-            key: 'name',
+            dataIndex: 'nameZh',
+            key: 'nameZh',
             render: (text) => <a>{text}</a>,
         })
         const columnsMap = new Map()
@@ -24,11 +30,15 @@ const TargetMenuView = props => {
                 }
                 if(Array.isArray(ingredientsList)){
                     ingredientsList.forEach(j=>{
-                        let nameKey = j.key
+                        let nameKey = j.name
                         newItem[nameKey] = j.num
                         if(!columnsMap.has(nameKey)){
+                            let name = j.name
+                            if(ingredientsListMap.has(j.name)){
+                                name = ingredientsListMap.get(j.name).nameZh
+                            }
                             columnsMap.set(nameKey,{
-                                title: j.name,
+                                title: name,
                                 dataIndex: nameKey,
                                 key: nameKey,
                             })
@@ -38,13 +48,25 @@ const TargetMenuView = props => {
                 result2.push(newItem)
             })
             result1 = [...result1,...columnsMap.values()]
+            // result1.push({
+            //     title: '操作',
+            //     dataIndex: 'operate',
+            //     key: 'operate',
+            //     render: (text) => <a onClick={(e)=>(remove(text))}>删除</a>,
+            // })
+            const { bagList } = bagData
+            if(Array.isArray(bagList)){
+                let newItem = {
+                    nameZh: '包裹内容'
+                }
+                bagList.forEach(i=>{
+                    newItem[i.name] = i.num
+                })
+                result2.push(newItem)
+            }
+
             setTableData(result2)
             setColumns(result1)
-
-            console.log('--------------------',{
-                result1,
-                result2
-            })
         }
     }
     if(!tableData.length){

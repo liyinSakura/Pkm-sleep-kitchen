@@ -8,21 +8,48 @@ const { Meta } = Card;
 const defaultCheckedList = [];
 const MenuCard = props => {
     const bagData = store.get('bagData') || {}
+    const targetMenu = store.get('targetMenu') || []
     const { bagList = [], totalNum = 0,  } = bagData
     const { source, onTargetMenuChange } = props
     const { ingredientsList } = source
     const [needList,setNeedList] = useState([])
     const [tagList,setTagList] = useState([])
     const [checkedList, setCheckedList] = useState(defaultCheckedList);
+    const [checked, setChecked] = useState(false);
     const onChange = useCallback((e) => {
         const checked = e.target.checked
-        onTargetMenuChange && onTargetMenuChange({
-            checked,menu:source
-        })
+        setChecked(checked)
+        let result = store.get('targetMenu')
+        if(Array.isArray(result)){
+            const initIndex = result.findIndex(i=>i.key===source.key)
+            if(initIndex > -1){
+                if(checked){
+
+                } else {
+                    result.splice(initIndex,1)
+                    store.set('targetMenu',result)
+                }
+            }else{
+                result.push(source)
+                store.set('targetMenu',result)
+            }
+
+        } else {
+            result = []
+            if(checked){
+                result.push(source)
+                store.set('targetMenu',result)
+            }
+        }
+        console.log('----------------result----------',result)
 
     },[source])
+
     useEffect(()=>{
         let tags = [], canMake = true
+        if(Array.isArray(targetMenu)){
+            setChecked(targetMenu.findIndex(i=>i.key === source.key) > -1)
+        }
         if(Array.isArray(ingredientsList)&&ingredientsList.length){
             const bagListMap = new Map()
             bagList.forEach(i=>{
@@ -94,7 +121,7 @@ const MenuCard = props => {
                         />
                     </div>
                     <div className={styles.cardInfo}>
-                        <Meta title={source.nameZh || source.name} description={source.descriptionZh||source.Description} />
+                        <Meta title={`${source.nameZh || source.name} ${source.totalItemNum > 0 ? source.totalItemNum : ''}`} description={source.descriptionZh||source.Description} />
                         <div className={styles["ingredientsListWrap"]}>
                             {
                                 Array.isArray(ingredientsList) ? (
@@ -105,11 +132,11 @@ const MenuCard = props => {
                             }
                         </div>
                         {/*todo 设置目标菜谱*/}
-                        {/*{*/}
-                        {/*    Array.isArray(ingredientsList) && ingredientsList.length ? (<div>*/}
-                        {/*        <Checkbox onChange={onChange}>设为目标</Checkbox>*/}
-                        {/*    </div>) : null*/}
-                        {/*}*/}
+                        {
+                            Array.isArray(ingredientsList) && ingredientsList.length ? (<div>
+                                <Checkbox onChange={onChange} checked={checked}>设为目标</Checkbox>
+                            </div>) : null
+                        }
 
                     </div>
                 </div>
